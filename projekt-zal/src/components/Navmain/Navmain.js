@@ -14,7 +14,7 @@ class Navmain extends Component {
                 <div className="navham" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
-                <ul>
+                <ul className={this.state.clicked ? 'navmenu Active' : 'navMenu'}>
                     {MenuItems.map((item, index) => {
                         return (
                             <li key ={index}>
