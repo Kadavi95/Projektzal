@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {MenuItems} from './MenuItems';
-import navmain from '../../sass/navmain.scss'
+import { Button } from '../Button'
+
 class Navmain extends Component {
     state = {clicked: false}
 
@@ -10,11 +11,12 @@ class Navmain extends Component {
     render(){
         return(
             <nav className="navitems">
+                
                 <h1 className="navlogo">Przychodnia VET</h1>
                 <div className="navham" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
-                <ul className={this.state.clicked ? 'navmenu Active' : 'navMenu'}>
+                <ul className={this.state.clicked ? 'navmenuActive' : 'navMenu'}>
                     {MenuItems.map((item, index) => {
                         return (
                             <li key ={index}>
@@ -22,11 +24,8 @@ class Navmain extends Component {
                                 {item.title}</a>
                             </li>)
                     })}
-                 
-                  
                 </ul>
-
-
+           
             </nav>
         )
     }
