@@ -1,0 +1,19 @@
+.navitems {
+    background: #71949B;
+    background: -webkit-linear-gradient(bottom, #71949B, #19819B);
+    background: -moz-linear-gradient(bottom, #71949B, #19819B);
+    background: linear-gradient(to top, #71949B, #19819B);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .navlogo {
+        font-size: 2.2rem;
+        color: #ffffff;
+        margin-left: 20px;
+        cursor: pointer;
+
+    }
+ 
+}
+
