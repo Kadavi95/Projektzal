@@ -1,13 +1,18 @@
 import './sass/reset.scss'
 import './App.scss';
-import Navmain from './components/Navmain/Navmain'
-import './sass/main.scss'
+
+import Navbar from './components/Navbar'
+import {BrowserRouter as Router} from 'react-router-dom';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <Navmain/>
-    </div>
+    <>
+    <Router>
+    <Navbar/>
+    </Router>
+    </>
   );
 }
 
