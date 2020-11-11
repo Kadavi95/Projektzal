@@ -1,7 +1,8 @@
 
 import React from 'react';
-import reset from './sass/reset.scss'
+import  './sass/reset.scss'
 import Navbar from './components/Navbar';
+import Footer from './components/Footer'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
@@ -23,6 +24,7 @@ function App() {
         <Route path='/contactUs' component={contactUs} />
         <Route path='/aboutUs' component={aboutUs} />
       </Switch>
+      <Footer/>
     </Router>
   );
 }

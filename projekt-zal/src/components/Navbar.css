@@ -2,6 +2,7 @@
     /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
     background-image: linear-gradient(to bottom, #000000, #252026, #393e4d, #416270, #508787);
     height: 5rem;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,6 +14,10 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2.2rem;
+    transition: all .35s ease-in;
+  }
+  .navbar-logo:hover {
+    color: #22a2dd
   }
   .nav-menu {
     display: grid;
@@ -31,11 +36,11 @@
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    transition: all .35s ease-in;
   }
   .nav-links:hover {
     background-color: #22a2dd;
-    border-radius: 4px;
-    transition: all .35s ease-in;
+    border-radius: 6px;
   }
   .fa-bars {
     color: #fff;
