@@ -1,5 +1,6 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
+    background-image: linear-gradient(to bottom, #000000, #252026, #393e4d, #416270, #508787);
     height: 5rem;
     display: flex;
     justify-content: center;
@@ -39,54 +40,55 @@
   .fa-bars {
     color: #fff;
     font-size: 2.2rem;
-    margin-right: 20px;
+    top: 0;
+    right: 0;
+    transform: translate(-90%, -5%);
   }
   .menu-icon {
     display: none;
   }
   @media screen and (max-width: 960px) {
-    .NavbarItems {
+    .nav-item {
       position: relative;
+      margin-top: 0.624rem;
+      margin-top: 0.624rem;
     }
     .nav-menu {
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 90vh;
+      height: 70vh;
       position: absolute;
-      top: 80px;
+      top: 5rem;
       left: -100%;
-      opacity: 1;
+      /* opacity: 1; */
       transition: all 0.5s ease;
     }
-
     .nav-menu.active {
       background: #242222;
+      background: #595959;
       left: 0;
       opacity: 1;
       transition: all 0.5s ease;
       z-index: 1;
     }
-  
     .nav-links {
       text-align: center;
-      padding: 2rem;
+      padding: 2.5rem;
       width: 100%;
-      display: table;
+      /* display: table; */
     }
-  
     .nav-links:hover {
       background-color: #1888ff;
       border-radius: 0;
+      transition: all .35s ease-in;
     }
-  
     .navbar-logo {
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(25%, 50%);
+      transform: translate(25%, 60%);
     }
-  
     .menu-icon {
       display: block;
       position: absolute;
@@ -96,10 +98,11 @@
       font-size: 1.8rem;
       cursor: pointer;
     }
-  
     .fa-times {
       color: #fff;
       font-size: 2.2rem;
-      margin-right: 20px;
+      top: 0;
+      right: 0;
+      transform: translate(-125%, -5%);
     }
   }
