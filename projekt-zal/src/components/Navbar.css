@@ -1,12 +1,13 @@
 .navbar {
     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
-    height: 80px;
+    height: 5rem;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
   }
-  
+
   .navbar-logo {
     color: #fff;
     justify-self: start;
@@ -16,22 +17,16 @@
     font-size: 2rem;
   }
   
-  .fa-firstdraft {
-    margin-left: 0.5rem;
-    font-size: 1.6rem;
-  }
-  
   .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
+    grid-gap: 60px;
     list-style: none;
     text-align: center;
     width: 70vw;
     justify-content: end;
     margin-right: 2rem;
   }
-  
   .nav-item {
     display: flex;
     align-items: center;
@@ -52,6 +47,7 @@
   
   .fa-bars {
     color: #fff;
+    font-size: 2rem;
   }
   
   .nav-links-mobile {
@@ -120,7 +116,7 @@
       color: #fff;
       font-size: 2rem;
     }
-  
+/*   
     .nav-links-mobile {
       display: block;
       text-align: center;
@@ -138,9 +134,6 @@
       background: #fff;
       color: #1888ff;
       transition: 250ms;
-    }
+    } */
   
-    button {
-      display: none;
-    }
   }

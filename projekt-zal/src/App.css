@@ -1,71 +1,13 @@
 .home,
-.services,
-.products,
-.contact-us,
-.sign-up,
-.marketing,
-.consulting {
+.appointment,
+.contactUs,
+.findUs,
+.Home, {
   display: flex;
-  height: 90vh;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+  margin: 0 auto;
 }
 
-.home {
-
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: black;
- font-size: 100px;
-}
-
-.services {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color:black;
-  font-size: 100px;
-}
-
-.products {
-  
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.contact-us {
-
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.sign-up {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-size: 100px;
-}
-
-.marketing {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.consulting {
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
