@@ -33,7 +33,7 @@
     padding: 0.5rem 1rem;
   }
   .nav-links:hover {
-    background-color: #1888ff;
+    background-color: #22a2dd;
     border-radius: 4px;
     transition: all .35s ease-in;
   }
@@ -43,6 +43,10 @@
     top: 0;
     right: 0;
     transform: translate(-90%, -5%);
+    transition: all .35s ease-in;
+  }
+  .fa-bars:hover {
+    color: #22a2dd;
   }
   .menu-icon {
     display: none;
@@ -64,8 +68,7 @@
       /* opacity: 1; */
       transition: all 0.5s ease;
     }
-    .nav-menu.active {
-      background: #242222;
+    .nav-menu.active {     
       background: #595959;
       left: 0;
       opacity: 1;
@@ -76,12 +79,12 @@
       text-align: center;
       padding: 2.5rem;
       width: 100%;
+      transition: all .35s ease-in;
       /* display: table; */
     }
     .nav-links:hover {
-      background-color: #1888ff;
+      background-color: #22a2dd;
       border-radius: 0;
-      transition: all .35s ease-in;
     }
     .navbar-logo {
       position: absolute;
@@ -104,5 +107,9 @@
       top: 0;
       right: 0;
       transform: translate(-125%, -5%);
+      transition: all .35s ease-in;
+    }
+    .fa-times:hover {
+      color: #22a2dd;
     }
   }
