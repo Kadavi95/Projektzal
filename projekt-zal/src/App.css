@@ -1,8 +1,7 @@
 .home,
 .appointment,
 .contactUs,
-.findUs,
-.Home, {
+.findUs {
   display: flex;
   height: 100vh;
   align-items: center;
