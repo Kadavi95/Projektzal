@@ -1,7 +1,8 @@
 import React from 'react';
 import '../../App.css';
+import {useForm} from 'react-hook-form'
 
-function Appoint() {
+export default function Appoint() {
   return (
     <div className='container'>
       <h1 className='formTitle'>Umów wizytę</h1>
@@ -72,9 +73,9 @@ function Appoint() {
       <p>zapoznałem się z treścią klauzuli RODO</p>
       <input type="checkbox"/>
       <button type="submit">Submit</button>
-      <h3>Innformujemy, że potwierdzenie wizyty przyjdzie do Państwa drogą telefoniczną </h3>
+      <h3>Informujemy, że potwierdzenie wizyty przyjdzie do Państwa drogą telefoniczną </h3>
       </form>
     </div>
   )
 }
-export default Appoint
+
