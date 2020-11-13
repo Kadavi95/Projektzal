@@ -16,7 +16,7 @@ export default function ContactUs() {
         <p>Nr NIP: 313-1313-22-11</p>
         <p>KRS: 313- 222 222</p>
       </div>
-      <div>
+      <div className='date-active'>
         <h1>Napisz do nas wiadomość</h1>
         <form onSubmit={handleSubmit   (onSubmit)}>
           <label> 
@@ -29,6 +29,11 @@ export default function ContactUs() {
             <textarea type='textarea' name='textarea'ref={register({ required: true })} ></textarea>
             <p>{errors.textarea && <span>To pole jest wymagane</span>}</p>
           </label>
+          <label>
+          Zapoznałem się z klauzulą RODO
+            <input type='checkbox' name='rodo' ref={register({ required: true })}></input>
+            {errors.rodo && <span>To pole jest wymagane</span>}
+        </label>
         <input type="submit" />
       </form>
       </div>
