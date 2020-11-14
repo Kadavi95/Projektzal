@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../../App.css';
 import {useForm} from 'react-hook-form'
+import { firestore } from './firebase'
+
 
 export default function ContactUs() {
   const { register, handleSubmit, errors } = useForm();
   const onSubmit = data => console.log(data);
+
+
   
   return (
     <div className='container'>
@@ -18,7 +22,7 @@ export default function ContactUs() {
       </div>
       <div className='date-active'>
         <h1>Napisz do nas wiadomość</h1>
-        <form onSubmit={handleSubmit   (onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)}>
           <label> 
             Podaj swój adres email:
             <input type="text" name="email" ref={register({ required: true })}></input>

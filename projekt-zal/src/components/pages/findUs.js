@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import { firestore } from './firebase'
 import '../../App.css';
+import {useForm} from 'react-hook-form'
 
 export default class findUs extends Component {
+
 	state = {
 		title: "",
 		author: ""
@@ -12,7 +14,7 @@ export default class findUs extends Component {
   }
   addBook = event => {
     event.preventDefault()
-  
+    
     firestore.collection("books").add({
       title: this.state.title,
       author: this.state.author
@@ -20,7 +22,7 @@ export default class findUs extends Component {
   
     this.setState({ title: "", author: "" })
   }
-
+  
   render() {
     const { title, author } = this.state
 
@@ -34,7 +36,7 @@ export default class findUs extends Component {
                     onChange={this.updateInput}
                     value={title}
       />
-      <br />
+    
                 <input
                     type='text'
                     placeholder='Author of the Book?'
@@ -42,7 +44,7 @@ export default class findUs extends Component {
                     onChange={this.updateInput}
                     value={author}
       />
-      <br />
+    
                 <button type='submit'>Submit</button>
             </form>
         </div>
