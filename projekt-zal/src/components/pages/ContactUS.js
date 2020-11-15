@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../../App.css';
+import './contact.scss'
 import {useForm} from 'react-hook-form'
 
 export default function ContactUs() {
