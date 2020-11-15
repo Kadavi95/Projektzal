@@ -12,13 +12,13 @@ export default function Appoint() {
       <h1 className='formTitle'>Umów wizytę</h1>
 
       <form className='container_form'onSubmit={handleSubmit(onSubmit)}>
-        <label> 
+        <label className='label_form_name'> 
           Podaj swoje imię
           <input className='form_name' placeholder="name" type="text" name="name" ref={register({ required: true })}></input>
           <p>{errors.name && <span>To pole jest wymagane</span>}</p>
         </label>
 
-        <label> 
+        <label className='label_form_surname'> 
           Podaj swoje nazwisko
           <input className='form_surname' placeholder="surname" type="text" name="surname" ref={register({ required: true })}></input>
           <p>{errors.surname && <span>To pole jest wymagane</span>}</p>

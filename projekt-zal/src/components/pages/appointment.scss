@@ -2,12 +2,45 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 30rem;
-    height: 20rem;
+    transform: translate(-50%, -60%);
+    width: 25rem;
+    height: 30rem;
     border: 5px solid red;
+    .formTitle {
+        font-size: 40px;
+        color: red;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        letter-spacing: 3px;
+    }
+    .container_form {
+        width: 19rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+        letter-spacing: 1px;
+    }
+    .label_form_name{
+        margin-bottom: .8rem;
+    }
+    .form_name {
+        color: red;
+        margin-left: 3.61rem;
+        width: 7rem;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+    .label_form_surname {
+        margin-bottom: .8rem;
+    }
+    .form_surname {
+        color: red;
+        margin-left: 1.36rem;
+        width: 7rem;
+    }
 }
+

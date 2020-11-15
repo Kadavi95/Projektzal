@@ -14,7 +14,7 @@ export default function ContactUs() {
 
 
   return (
-    <div className='container'>
+    <div className='container-contact'>
       <div className='date'>
         <h1 className="date_heading">Przychodnia VET</h1>
         <p className="date_text">Adres: ul. Pieskowa 13b, 10-001 Pieskowo  Górne</p>
