@@ -15,22 +15,22 @@ export default function Appoint() {
         <label className='label_form_name'> 
           Podaj swoje imię
           <input className='form_name' placeholder="name" type="text" name="name" ref={register({ required: true })}></input>
-          <p>{errors.name && <span>To pole jest wymagane</span>}</p>
+          {errors.name && <p className='warning'>To pole jest wymagane</p>}
         </label>
 
         <label className='label_form_surname'> 
           Podaj swoje nazwisko
           <input className='form_surname' placeholder="surname" type="text" name="surname" ref={register({ required: true })}></input>
-          <p>{errors.surname && <span>To pole jest wymagane</span>}</p>
+          {errors.surname && <p className='warning'>To pole jest wymagane</p>}
         </label>
 
-        <label> 
+        <label className='label_form_telephone'> 
           Podaj swój nr telefonu
-          <input className='form_number'placeholder="lelephone number" type="number" name="phone" ref={register({ required: true })}></input>
-          {errors.phone && <span>To pole jest wymagane</span>}
+          <input className='form_number'placeholder="telephone number" type="number" name="phone" ref={register({ required: true })}></input>
+          {errors.phone && <p className='warning'>To pole jest wymagane</p>}
         </label>
 
-        <label> 
+        <label className='label_form_doc'> 
           Wybierz lekarza
           <select className='form_select-doc'name="doctor" ref={register}>
             <option className='form_dec_-option'>Lek. wet. Predator</option>
@@ -39,8 +39,8 @@ export default function Appoint() {
           </select>
         </label>
 
-        <label> 
-          Wybierz interesujący Cię dzień
+        <label className='label_form_day'> 
+          Wybierz dzień wizyty
           <select className='form_select-day' name="day" ref={register}>
             <option className='form_day-option'>Poniedziałek</option>
             <option className='form_day-option'>Wtorek</option>
@@ -50,8 +50,8 @@ export default function Appoint() {
           </select>
         </label>
 
-        <label> 
-          Wybierz interesującą Cię godzinę
+        <label className='label_form_hour'> 
+          Wybierz godzinę wizyty
           <select className='form_select-hour' name="hour" ref={register}>
             <option className='form_day-option'>8:00</option>
             <option className='form_day-option' >10:00</option>
@@ -64,14 +64,14 @@ export default function Appoint() {
             <option className='form_day-option' >16:00</option>
           </select>
         </label>
-        <label>
-          Zapoznałem się z klauzulą RODO
+        <label className='label_form-rodo'>
+          Zapoznałem się z RODO
             <input className='form_checkbox' type='checkbox' name='rodo' ref={register({ required: true })}></input>
-            {errors.rodo && <span>To pole jest wymagane</span>}
+            {errors.rodo && <p className='warning'>To pole jest wymagane</p>}
         </label>
       <input className='form_button'type="submit" />
+      <h1 className='form_approval'>Informujemy, że wszelkie wizyty potwierdzamy drogą telefoniczną</h1>
       </form>
-      <h1>Informujemy, że wszelkie wizyty potwierdzamy drogą telefoniczną</h1>
     </div>
   )
 }
