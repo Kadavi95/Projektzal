@@ -12,16 +12,31 @@ export default function ContactUs() {
   //   const [rodo, setRodo] = useState("")
   // }
 
-
   return (
     <div className='container-contact'>
       <div className='date'>
         <h1 className="date_heading">Przychodnia VET</h1>
-        <p className="date_text">Adres: ul. Pieskowa 13b, 10-001 Pieskowo  Górne</p>
-        <p className="date_text">Numer tel: 11 333 222 11</p>
-        <p className="date_text">Adres mail: pieskigórą@pieski.pl</p>
-        <p className="date_text">Nr NIP: 313-1313-22-11</p>
+        <div className='adress_container'>
+          <p className="date_text_adress">Adres: </p>
+          <p className="date_text_adress-2">ul. Pieskowa 13b, <br></br>10-001 Pieskowo  Górne</p>
+        </div>
+        <div className='number_container'>
+          <p className="date_text_number">Numer tel:</p>
+          <p className="date_text_number-2">11 333 222 119</p>
+        </div>
+        <div className='mail_container'>
+          <p className="date_text_mail">Adres mail:</p>
+          <p className="date_text_mail-2">pieskigórą@pieski.pl</p>
+        </div>
+        <div className='NIP_container'>
+          <p className="date_text_nip-2">Nr NIP: </p>
+          <p className="date_text_nip-2"> 313-1313-22-11</p>
+        </div>
+        <div className='KRS_container'>
         <p className="date_text">KRS: 313- 222 222</p>
+        <p className="date_text">313- 222 222</p>
+        </div>
+      
       </div>
       <div className='date-active'>
         <h1>Napisz do nas wiadomość</h1>
