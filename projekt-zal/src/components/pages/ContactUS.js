@@ -60,9 +60,11 @@ export default function ContactUs() {
             <input className='active_checkbox'type='checkbox' name='rodo' ref={register({ required: true })}></input>
           </div>
           <p className='active_warning'>{errors.rodo && <p>To pole jest wymagane</p>}</p>
-
-        <input type="submit" />
+        <div className='active_button-center'>
+        <input className='active_button'type="submit"></input>
+        </div>
       </form>
+    
       </div>
 
     </div>
