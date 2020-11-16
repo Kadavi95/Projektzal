@@ -13,6 +13,17 @@
     border-radius: 20px;
     background-image: linear-gradient(to bottom, #000000, #252026, #393e4d, #416270, #508787);
     font-size: 1.05rem;
+    @media screen and (max-width: 960px) {
+        display: flex;
+        flex-direction: column;
+        width: 30.7rem;
+        height: 44rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -55%);
+
+    }
     .date {
         display: flex;
         flex-direction: column;
