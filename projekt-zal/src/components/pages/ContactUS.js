@@ -1,16 +1,18 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './contact.scss'
 import {useForm} from 'react-hook-form'
+import { firestore } from "./firebase";
 
 export default function ContactUs() {
   const { register, handleSubmit, errors } = useForm();
-  const onSubmit = data => console.log(data);
-
-  // const Contact = () => {
-  //   const [email, setEmail] = useState("");
-  //   const [message, setMessage] = useState("")
-  //   const [rodo, setRodo] = useState("")
-  // }
+  const onSubmit = data => {
+    const { email,textarea,rodo } = data;
+    firestore.collection("messages").add({
+      email,textarea,rodo
+    }).then(() => {
+      alert('Udało się wysłać formularz')
+    }).catch(err => console.error(err))
+  };
 
   return (
     <div className='container-contact'>

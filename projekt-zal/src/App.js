@@ -12,6 +12,7 @@ import Appoint from './components/pages/appointment';
 import findUs from './components/pages/findUs';
 import ContactUs from './components/pages/contactUs';
 import aboutUs from './components/pages/aboutUs';
+import CMS from './components/pages/cms';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/findUs' component={findUs} />
         <Route path='/contactUs' component={ContactUs} />
         <Route path='/aboutUs' component={aboutUs} />
+        <Route path='/cms' component={CMS} />
       </Switch>
       <Footer/>
     </Router>

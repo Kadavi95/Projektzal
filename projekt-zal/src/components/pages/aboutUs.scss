@@ -1,0 +1,47 @@
+.aboutus_container{
+    width: 55rem;
+    height: 40rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -56%);
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    .aboutus_container-first {
+        width: 45rem;
+        height: 15rem;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .doctor_container-first{
+            width: 20rem;
+            height: 10rem;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: .5rem;
+            margin-right: .5rem
+        }
+        .first_doctor-photo {
+            width: 5rem;
+            height: 5rem;
+            margin-left: .5rem;
+            border-radius: 50%;
+            background-color: red;
+        }
+        .text_container{
+            width: 10rem;
+            height: 5rem;
+            margin-right: .5rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+}
