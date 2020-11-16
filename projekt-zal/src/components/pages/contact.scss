@@ -9,7 +9,9 @@
     width: 55rem;
     height: 35rem;
     color: #ffffff;
-    border: 3px solid red;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, #000000, #252026, #393e4d, #416270, #508787);
     font-size: 1.05rem;
     .date {
         display: flex;
@@ -18,7 +20,8 @@
         justify-content: center;
         width: 25rem;
         height: 20rem;
-        border: 1px solid red;
+        background-color: #696969;
+        border: 1px solid black;
         border-radius: 20px;
         letter-spacing: 1px;
         .date_heading{
@@ -82,7 +85,8 @@
         justify-content: space-between;
         width: 25rem;
         height: 20rem;
-        border: 1px solid red;
+        border: 1px solid black;
+        background-color: #696969;
         border-radius: 20px;
         letter-spacing: 1px;
         font-size: 1.05rem;
@@ -94,14 +98,14 @@
             margin-top: 2.41rem;
         }
         .data_active-form{
-            margin-bottom: 5rem;
+            margin-bottom: 5.5rem;
             margin-top: 3.5rem;
-            border: 1px solid black;
+           
         }
         .active_form-email{
             margin-left: .5rem;
             margin-right: .5rem;
-            margin-top: 1rem;
+            margin-top: .8rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -123,20 +127,21 @@
         .active_form-textarea{
             margin-left: .5rem;
             margin-right: .5rem;
-            margin-top: 1rem;
+            margin-top: .8rem;
             display: flex;
             justify-content: space-between;
             .data_active-textarea{
-                height: 3rem;
+                height: 2rem;
                 width: 12.2rem;
                 resize: none;
                 border-radius: 5px;
+                border: 1px solid black;
             }
         }
         .active_form-checkbox{
             margin-left: .5rem;
             margin-right: .5rem;
-            margin-top: 1rem;
+            margin-top: .8rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -145,10 +150,25 @@
                 width: .9rem;
             }
         }
-    .active_button-center{
-        display: flex;
-        justify-content: center;
-    }
-        
+        .active_button-center{
+            display: flex;
+            justify-content: center; 
+            .active_button{
+                width: 7rem;
+                height: 1.5rem;
+                color: #fff;
+                background-color:#22a2dd;
+                border-radius: 5px;
+                border: none;
+                margin-top: .8rem;
+                box-shadow: 2px 2px 3px #e6cf00;
+                transition: .35s ease-in;
+                &:hover {
+                    background-color: #ef281a;
+                    box-shadow: 2px 2px 3px #ffffff;
+                }
+            }        
+        }
+     
     }
 }
