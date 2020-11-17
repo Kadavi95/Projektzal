@@ -101,7 +101,7 @@ export default function Appoint() {
           </select>
         </div>
         <div className='rodo_container'>
-          <p>Zapoznałem sie z RODO</p>
+          <p className='rodo_text'>Zapoznałem sie z RODO</p>
           <div className='rodo_container-inner'>
           <input
             className="form_checkbox"
