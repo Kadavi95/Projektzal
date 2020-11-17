@@ -100,8 +100,9 @@ export default function Appoint() {
             <option className="form_day-option">16:00</option>
           </select>
         </div>
-        <div>
+        <div className='rodo_container'>
           <p>Zapoznałem sie z RODO</p>
+          <div className='rodo_container-inner'>
           <input
             className="form_checkbox"
             type="checkbox"
@@ -109,6 +110,7 @@ export default function Appoint() {
             ref={register({ required: true })}
           ></input>
           {errors.rodo && <p className="warning">To pole jest wymagane</p>}
+          </div>
         </div>
         <input className="form_button" type="submit" />
         <h1 className="form_approval">

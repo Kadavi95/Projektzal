@@ -20,7 +20,7 @@
     .container_form {
         margin-top: 2rem;
         width: 60%;
-        height: 40vh;
+        height: 44vh;
         display: flex;
         flex-direction: column;
         align-content: center;
@@ -140,14 +140,23 @@
         border-radius: 5px;
         border: 1px solid black;
     }
-    .label_form-rodo {
+    .rodo_container {
+        margin-top: .8rem;
         margin-left: .5rem;
         margin-right: .5rem;
         margin-bottom: .8rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .rodo_container-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
     }
     .form_checkbox {
         color: black;
-        margin-left: 5.45rem;
         height: .9rem;
         width: .9rem;
     }
@@ -171,11 +180,11 @@
         margin-top: .8rem;
         margin-left: .5rem;
         margin-bottom: .8rem;
+        text-align: center;
     }
     .warning {
         color: #ef281a;
-        font-size: .8rem;
-        margin-top: .5rem;
+        font-size: .6rem;
         display: flex;
         justify-content: flex-end;
         font-weight: bold;
