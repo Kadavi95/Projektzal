@@ -25,20 +25,23 @@ export default function Appoint() {
       <h1 className="formTitle">Umów wizytę</h1>
 
       <form className="container_form" onSubmit={handleSubmit(onSubmit)}>
-        <label className="label_form_name">
-          Podaj swoje imię
-          <input
+       <div className='name_container'>
+          <p className='name_text' >Podaj swoje imię:</p>
+          <div className='name_inner-container'>
+            <input
             className="form_name"
             placeholder="name"
             type="text"
             name="name"
             ref={register({ required: true })}
-          ></input>
-          {errors.name && <p className="warning">To pole jest wymagane</p>}
-        </label>
-
-        <label className="label_form_surname">
-          Podaj swoje nazwisko
+            ></input>
+            {errors.name && <p className="warning">To pole jest wymagane</p>
+          }
+          </div>
+        </div>
+      <div className='surname_container'>
+        <p className='surname_text' >Podaj swoje nazwisko:</p>
+        <div className='surname_inner-container'>
           <input
             className="form_surname"
             placeholder="surname"
@@ -47,10 +50,11 @@ export default function Appoint() {
             ref={register({ required: true })}
           ></input>
           {errors.surname && <p className="warning">To pole jest wymagane</p>}
-        </label>
-
-        <label className="label_form_telephone">
-          Podaj swój nr telefonu
+        </div>
+      </div>
+      <div className='phone_container'>
+        <p className='phone_nr' >Podaj swój numer telefonu:</p>
+        <div className='phone_inner-container'>
           <input
             className="form_number"
             placeholder="telephone number"
@@ -59,19 +63,20 @@ export default function Appoint() {
             ref={register({ required: true })}
           ></input>
           {errors.phone && <p className="warning">To pole jest wymagane</p>}
-        </label>
-
-        <label className="label_form_doc">
-          Wybierz lekarza
+          </div>
+        </div>
+    
+        <div className='appoint_doctor'>
+          <p>Wybierz lekarza:</p>
           <select className="form_select-doc" name="doctor" ref={register}>
             <option className="form_dec_-option">Lek. wet. Predator</option>
             <option className="form_dec_-option">Lek. wet. Kowalski</option>
             <option className="form_dec_-option">Lek. wet. Nowak</option>
           </select>
-        </label>
+        </div>
 
-        <label className="label_form_day">
-          Wybierz dzień wizyty
+        <div className='day_container'>
+          <p>Wybierz dzień wizyty:</p>
           <select className="form_select-day" name="day" ref={register}>
             <option className="form_day-option">Poniedziałek</option>
             <option className="form_day-option">Wtorek</option>
@@ -79,10 +84,10 @@ export default function Appoint() {
             <option className="form_day-option"> Czwartek</option>
             <option className="form_day-option">Piątek</option>
           </select>
-        </label>
+          </div>
 
-        <label className="label_form_hour">
-          Wybierz godzinę wizyty
+        <div className='hour_container'>
+          <p>Podaj godzinę wizyty</p>
           <select className="form_select-hour" name="hour" ref={register}>
             <option className="form_day-option">8:00</option>
             <option className="form_day-option">10:00</option>
@@ -94,9 +99,9 @@ export default function Appoint() {
             <option className="form_day-option">15:00</option>
             <option className="form_day-option">16:00</option>
           </select>
-        </label>
-        <label className="label_form-rodo">
-          Zapoznałem się z RODO
+        </div>
+        <div>
+          <p>Zapoznałem sie z RODO</p>
           <input
             className="form_checkbox"
             type="checkbox"
@@ -104,7 +109,7 @@ export default function Appoint() {
             ref={register({ required: true })}
           ></input>
           {errors.rodo && <p className="warning">To pole jest wymagane</p>}
-        </label>
+        </div>
         <input className="form_button" type="submit" />
         <h1 className="form_approval">
           Informujemy, że wszelkie wizyty potwierdzamy drogą telefoniczną

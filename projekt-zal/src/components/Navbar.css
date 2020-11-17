@@ -1,10 +1,9 @@
 .navbar {
-    /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
     background-image: linear-gradient(to bottom, #000000, #252026, #393e4d, #416270, #508787);
-    height: 5rem;
+    height: 10vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: 1.2rem;
   }
@@ -15,6 +14,8 @@
     text-decoration: none;
     font-size: 2.2rem;
     transition: all .35s ease-in;
+    display: flex;
+    align-items: center;
   }
   .navbar-logo:hover {
     color: #22a2dd
@@ -45,9 +46,6 @@
   .fa-bars {
     color: #fff;
     font-size: 2.2rem;
-    top: 0;
-    right: 0;
-    transform: translate(-90%, -5%);
     transition: all .35s ease-in;
   }
   .fa-bars:hover {
@@ -66,9 +64,9 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 75.6%;
+      height: calc(100% - 10vh);
       position: absolute;
-      top: 5rem;
+      top: 10vh;
       left: -100%;
       /* opacity: 1; */
       transition: all 0.5s ease;
@@ -92,29 +90,24 @@
       border-radius: 0;
     }
     .navbar-logo {
-      position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(25%, 60%);
+     font-size: 1.5rem;
     }
     .menu-icon {
       display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
       font-size: 1.8rem;
       cursor: pointer;
     }
     .fa-times {
       color: #fff;
       font-size: 2.2rem;
-      top: 0;
-      right: 0;
-      transform: translate(-125%, -5%);
       transition: all .35s ease-in;
     }
     .fa-times:hover {
       color: #22a2dd;
+    }
+    .fa-bars {
+      color: #fff;
+      font-size: 1.8rem;
+      transition: all .35s ease-in;
     }
   }
