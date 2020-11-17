@@ -72,6 +72,7 @@ export default function Appoint() {
             <option className="form_dec_-option">Lek. wet. Predator</option>
             <option className="form_dec_-option">Lek. wet. Kowalski</option>
             <option className="form_dec_-option">Lek. wet. Nowak</option>
+            <option className="form_dec_-option">Lek. wet. Janusz</option>
           </select>
         </div>
 

@@ -11,7 +11,6 @@
     .aboutus_container-first {
         width: 90%;
         height: 40%;
-        border: 1px solid red;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -45,6 +44,13 @@
             height: 45%;
         }
         @media screen and (min-height: 1020px) and (max-height: 1025px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 45%;
+        }
+        @media screen and (max-width: 281px) {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -98,6 +104,13 @@
                 width: 75%;
                 height: 45%;
             }
+            @media screen and (max-width: 281px) {
+                margin-left: .15rem;
+                margin-right: .15rem;
+                border-radius: 9px;
+                width: 75%;
+                height: 45%;
+            }
         }
         .first_doctor-photo {
             width: 5rem;
@@ -106,8 +119,8 @@
             border-radius: 50%;
             background-color: red;
             @media screen and (max-height: 570px) {
-                width: 1.2rem;
-                height: 1.2rem;
+                width: 1.6rem;
+                height: 1.6rem;
             }
             @media screen and (min-height: 572px) and (max-height: 668px) {
                 width: 3rem;
@@ -124,6 +137,10 @@
             @media screen and (min-height: 1020px) and (max-height: 1025px) {
                 width: 4.5rem;
                 height: 4.5rem;
+            }
+            @media screen and (max-width: 281px) {
+                width: 1.8rem;
+                height: 1.8rem;
             }
         }
         .text_container-first{
@@ -181,6 +198,13 @@
                 width: 75%;
                 height: 45%;
             }
+            @media screen and (max-width: 281px) {
+                margin-left: .15rem;
+                margin-right: .15rem;
+                border-radius: 9px;
+                width: 75%;
+                height: 45%;
+            }
             
     }
     .second_doctor-photo {
@@ -190,8 +214,8 @@
         border-radius: 50%;
         background-color: red;
         @media screen and (max-height: 570px) {
-            width: 1.2rem;
-            height: 1.2rem;
+            width: 1.6rem;
+            height: 1.6rem;
         }
         
         @media screen and (min-height: 572px) and (max-height: 668px) {
@@ -210,6 +234,10 @@
             width: 4.5rem;
             height: 4.5rem;
         }
+        @media screen and (max-width: 281px) {
+            width: 1.8rem;
+            height: 1.8rem;
+        }
     }
     .text_container-second{
         width: 60%;
@@ -221,7 +249,6 @@
     .aboutus_container-second {
         width: 90%;
         height: 40%;
-        border: 1px solid red;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -309,6 +336,13 @@
                 width: 75%;
                 height: 45%;
             }
+            @media screen and (max-width: 281px) {
+                margin-left: .15rem;
+                margin-right: .15rem;
+                border-radius: 9px;
+                width: 75%;
+                height: 45%;
+            }
         }
         .third_doctor-photo {
             width: 5rem;
@@ -317,8 +351,8 @@
             border-radius: 50%;
             background-color: red;
             @media screen and (max-height: 570px) {
-                width: 1.2rem;
-                height: 1.2rem;
+                width: 1.6rem;
+                height: 1.6rem;
             }
             @media screen and (min-height: 572px) and (max-height: 668px) {
                 width: 3rem;
@@ -335,6 +369,10 @@
             @media screen and (min-height: 1020px) and (max-height: 1025px) {
                 width: 4.5rem;
                 height: 4.5rem;
+            }
+            @media screen and (max-width: 281px) {
+                width: 1.8rem;
+                height: 1.8rem;
             }
         }
         .text_container-third{
@@ -392,13 +430,13 @@
                 width: 75%;
                 height: 45%;
             }
-    }
-    .fourth_doctor-container {
-        width: 5rem;
-        height: 5rem;
-        margin-left: .5rem;
-        border-radius: 50%;
-        background-color: red;
+            @media screen and (max-width: 281px) {
+                margin-left: .15rem;
+                margin-right: .15rem;
+                border-radius: 9px;
+                width: 75%;
+                height: 45%;
+            }
     }
     .fourth_doctor-photo{
             width: 5rem;
@@ -407,8 +445,8 @@
             border-radius: 50%;
             background-color: red;
             @media screen and (max-height: 570px) {
-                width: 1.2rem;
-                height: 1.2rem;
+                width: 1.6rem;
+                height: 1.6rem;
             }
             @media screen and (min-height: 572px) and (max-height: 668px) {
                 width: 3rem;
@@ -426,6 +464,11 @@
                 width: 4.5rem;
                 height: 4.5rem;
             }
+            @media screen and (max-width: 281px) {
+                width: 1.8rem;
+                height: 1.8rem;
+            }
+            
     }
     .text_container-fourth{
         width: 60%;
@@ -459,6 +502,10 @@
             font-size: 1rem;
             margin-bottom: .9rem;
         }
+        @media screen and (max-width: 281px) {
+            font-size: .55rem;
+            margin-bottom: .3rem;
+        }
     }
     .doctor_desription{
         font-size: .9rem;
@@ -478,6 +525,9 @@
         }
         @media screen and (min-height: 1020px) and (max-height: 1025px) {
             font-size: .9rem;
+        }
+        @media screen and (max-width: 281px) {
+            font-size: .42rem;
         }
     }
     
