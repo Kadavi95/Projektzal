@@ -1,11 +1,29 @@
 import React, {Component} from 'react';
-import { firestore } from './firebase'
-import {useForm} from 'react-hook-form'
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 
+const mapStyles = {
+  width: '100%',
+  height: '100%'
+};
 
-export default function findUs(){
-
+export default class findUs extends Component{
+  render() {
     return (
-      <h1>hello JS</h1>
-    ) 
+      <Map
+        google={this.props.google}
+        zoom={14}
+        style={mapStyles}
+        initialCenter={
+          {
+            lat: -1.2884,
+            lng: 36.8233
+          }
+        }
+      />
+    );
   }
+}
+
+// export GoogleApiWrapper({
+//   apiKey: 'YOUR_GOOGLE_MAPS_API_KEY_GOES_HERE'
+// })(MapContainer);
