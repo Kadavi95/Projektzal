@@ -10,14 +10,21 @@
     align-items: center;
     .aboutus_container-first {
         width: 90%;
-        height: 15rem;
+        height: 40%;
         border: 1px solid red;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        @media screen and (max-height: 570px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
         .doctor_container-first{
             width: 50%;
-            height: 10rem;
+            height: 60%;
             border: 1px solid black;
             border-radius: 10px;
             background-color: #696969;
@@ -26,7 +33,14 @@
             justify-content: space-around;
             align-items: center;
             margin-left: .5rem;
-            margin-right: .5rem
+            margin-right: .5rem;
+            @media screen and (max-height: 570px) {
+                margin-left: .15rem;
+                margin-right: .15rem;
+                border-radius: 5px;
+                width: 70%;
+                height: 45%;
+            }
         }
         .first_doctor-photo {
             width: 5rem;
@@ -34,10 +48,14 @@
             margin-left: .5rem;
             border-radius: 50%;
             background-color: red;
+            @media screen and (max-height: 570px) {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
         }
         .text_container-first{
             width: 60%;
-            height: 5rem;
+            height: 60%;
             margin-right: .5rem;
             display: flex;
             flex-direction: column;
@@ -45,7 +63,7 @@
     }
     .doctor_container-second {
             width: 50%;
-            height: 10rem;
+            height: 60%;
             border: 1px solid black;
             border-radius: 10px;
             background-color: #696969;
@@ -54,7 +72,14 @@
             justify-content: space-around;
             align-items: center;
             margin-left: .5rem;
-            margin-right: .5rem
+            margin-right: .5rem;
+            @media screen and (max-height: 570px) {
+                margin-left: .15rem;
+                margin-right: .15rem;
+                border-radius: 5px;
+                width: 70%;
+                height: 45%;
+            }
     }
     .second_doctor-photo {
         width: 5rem;
@@ -62,24 +87,35 @@
         margin-left: .5rem;
         border-radius: 50%;
         background-color: red;
+        @media screen and (max-height: 570px) {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
     }
     .text_container-second{
         width: 60%;
-        height: 5rem;
+        height: 60%;
         margin-right: .5rem;
         display: flex;
         flex-direction: column;
     }
     .aboutus_container-second {
         width: 90%;
-        height: 15rem;
+        height: 40%;
         border: 1px solid red;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        @media screen and (max-height: 570px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
         .doctor_container-third{
             width: 50%;
-            height: 10rem;
+            height: 60%;
             border: 1px solid black;
             border-radius: 10px;
             background-color: #696969;
@@ -88,7 +124,14 @@
             justify-content: space-around;
             align-items: center;
             margin-left: .5rem;
-            margin-right: .5rem
+            margin-right: .5rem;
+            @media screen and (max-height: 570px) {
+                margin-left: .15rem;
+                margin-right: .15rem;
+                border-radius: 5px;
+                width: 70%;
+                height: 45%;
+            }
         }
         .third_doctor-photo {
             width: 5rem;
@@ -96,10 +139,14 @@
             margin-left: .5rem;
             border-radius: 50%;
             background-color: red;
+            @media screen and (max-height: 570px) {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
         }
         .text_container-third{
             width: 60%;
-            height: 5rem;
+            height: 60%;
             margin-right: .5rem;
             display: flex;
             flex-direction: column;
@@ -107,7 +154,7 @@
     }
     .doctor_container-fourth {
             width: 50%;
-            height: 10rem;
+            height: 60%;
             border: 1px solid black;
             border-radius: 10px;
             background-color: #696969;
@@ -116,7 +163,14 @@
             justify-content: space-around;
             align-items: center;
             margin-left: .5rem;
-            margin-right: .5rem
+            margin-right: .5rem;
+            @media screen and (max-height: 570px) {
+                margin-left: .15rem;
+                margin-right: .15rem;
+                border-radius: 5px;
+                width: 70%;
+                height: 45%;
+            }
     }
     .fourth_doctor-container {
         width: 5rem;
@@ -125,22 +179,42 @@
         border-radius: 50%;
         background-color: red;
     }
+    .fourth_doctor-photo{
+            width: 5rem;
+            height: 5rem;
+            margin-left: .5rem;
+            border-radius: 50%;
+            background-color: red;
+            @media screen and (max-height: 570px) {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+    }
     .text_container-fourth{
         width: 60%;
-        height: 5rem;
+        height: 60%;
         margin-right: .5rem;
         display: flex;
         flex-direction: column;
+        
     }
     .name_surname{
         text-align: center;
         margin-bottom: 1rem;
         font-size: 1.1rem;
+        @media screen and (max-height: 570px) {
+            font-size: .4rem;
+            margin-bottom: .4rem;
+        }
     }
     .doctor_desription{
         font-size: .9rem;
         margin-bottom: 1rem;
         text-align: justify;
+        @media screen and (max-height: 570px) {
+            font-size: .3rem;
+          
+        }
     }
     
 

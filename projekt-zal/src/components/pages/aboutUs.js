@@ -47,7 +47,7 @@ export default function aboutUs() {
 
           </div>
           <div className='doctor_container-fourth'>
-              <div className='fourth_doctor-container'>
+              <div className='fourth_doctor-photo'>
                  
               </div>
 
