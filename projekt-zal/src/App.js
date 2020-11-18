@@ -7,7 +7,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import Home from './components/pages/Home';
-
 import Appoint from './components/pages/appointment';
 import MapContainer from './components/pages/findUs';
 import ContactUs from './components/pages/contactUs';

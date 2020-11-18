@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import './Home.scss'
 
@@ -46,6 +47,10 @@ class Home extends Component {
         <div className='logo_home'>
         <i className="fas fa-dog pitbull"> </i>
         </div>
+        
+
+        <a href="/appointment" className='test2'>Umów wizytę!</a>
+     
       </div>
       </>
     )
