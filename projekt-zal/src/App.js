@@ -9,7 +9,7 @@ import './App.css';
 import Home from './components/pages/Home';
 
 import Appoint from './components/pages/appointment';
-import findUs from './components/pages/findUs';
+import MapContainer from './components/pages/findUs';
 import ContactUs from './components/pages/contactUs';
 import aboutUs from './components/pages/aboutUs';
 import CMS from './components/pages/cms';
@@ -21,7 +21,7 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/appointment' component={Appoint} />
-        <Route path='/findUs' component={findUs} />
+        <Route path='/findUs' component= {MapContainer} />
         <Route path='/contactUs' component={ContactUs} />
         <Route path='/aboutUs' component={aboutUs} />
         <Route path='/cms' component={CMS} />

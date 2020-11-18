@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
-import './Home.css'
+import './Home.scss'
 
 const photos = [  
   {
@@ -32,6 +32,7 @@ class Home extends Component {
         className: "slides"
       }
     return(
+      <>
       <div className='Rozp'>
         <Slider {...settings}>
           {photos.map((photo) => {
@@ -42,7 +43,11 @@ class Home extends Component {
             )
           })}
         </Slider>
+        <div className='logo_home'>
+        <i className="fas fa-dog pitbull"> </i>
+        </div>
       </div>
+      </>
     )
   }
 }

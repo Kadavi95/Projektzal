@@ -1,29 +1,37 @@
 import React, {Component} from 'react';
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
+import './findUs.scss'
 
 const mapStyles = {
-  width: '100%',
-  height: '100%'
+  width: '80%',
+  height: '70vh',
+  margin: '0 auto',
+  marginTop: '5vh',
+  borderRadius: '30px',
+  border: '1px solid black',
 };
 
-export default class findUs extends Component{
+export class MapContainer extends Component{
   render() {
     return (
-      <Map
+      <>
+
+        <Map
+        classname='google_map'
         google={this.props.google}
-        zoom={14}
+        zoom={15}
         style={mapStyles}
-        initialCenter={
-          {
-            lat: -1.2884,
-            lng: 36.8233
-          }
-        }
-      />
+        initialCenter={{lat: 53.115260,lng: 19.050960}}
+        >
+        <Marker position={{ lat: 53.11560,lng: 19.049760}} />
+        </Map>
+ 
+      </>
     );
   }
 }
 
-// export GoogleApiWrapper({
-//   apiKey: 'YOUR_GOOGLE_MAPS_API_KEY_GOES_HERE'
-// })(MapContainer);
+export default GoogleApiWrapper({
+  apiKey: ''
+})(MapContainer);
+
