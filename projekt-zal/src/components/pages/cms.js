@@ -48,7 +48,10 @@ export default function CMS() {
             <li key={`appointments_${i}`}>
               <span>{el.name}</span>
               <span>{el.surname}</span>
+              <span>{el.phone}</span>
               <span>{el.doctor}</span>
+              <span>{el.day}</span>
+              <span>{el.hour}</span>
             </li>
           ))}
         </ul>
