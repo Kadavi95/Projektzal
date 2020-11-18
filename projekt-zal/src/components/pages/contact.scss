@@ -42,8 +42,11 @@
       padding: 10% 0;
       font-size: 1rem;
     }
-    @media screen and (max-height: 568px) {
+    @media screen and (max-height: 570px) {
       font-size: .65rem;
+    }
+    @media screen and (min-height: 639px) and (max-height: 668px) {
+      font-size: .7rem;
     }
     @media screen and (max-width: 281px) {
       font-size: .45rem;
@@ -57,6 +60,9 @@
       letter-spacing: 1.7px;
       @media screen and (max-height: 568px) {
         font-size: .85rem;
+      }
+      @media screen and (min-height: 639px) and (max-height: 668px) {
+        font-size: 1rem;
       }
       @media screen and (max-width: 281px) {
         font-size: .65rem;
@@ -142,6 +148,9 @@
       @media screen and (max-height: 568px) {
         font-size: .85rem;
       }
+      @media screen and (min-height: 639px) and (max-height: 668px) {
+        font-size: 1rem;
+      }
       @media screen and (max-width: 281px) {
         font-size: .65rem;
       }
@@ -153,6 +162,9 @@
       @media screen and (max-height: 568px) {
         margin-bottom: 4.5rem;
         font-size: .65rem;
+      }
+      @media screen and (min-height: 639px) and (max-height: 668px) {
+        font-size: .7rem;
       }
       @media screen and (max-width: 281px) {
         font-size: .45rem;
@@ -167,6 +179,16 @@
         height: 0.58rem;
         border-radius: 5px;
         border: 1px solid black;
+        width: 6.5rem;
+        @media screen and (max-height: 570px) {
+          font-size: .65rem;
+          }
+          @media screen and (min-height: 639px) and (max-height: 668px) {
+            font-size: .7rem;
+          }
+          @media screen and (max-width: 281px) {
+            font-size: .45rem;
+          }
       }
     }
     .active_warning {
@@ -178,8 +200,16 @@
       margin-top: 0.1rem;
       text-align: right;
       @media screen and (max-height: 568px) {
-        
         font-size: .45rem;
+      }
+      @media screen and (min-height: 639px) and (max-height: 668px) {
+        font-size: .5rem;
+      }
+      @media screen and (min-height: 639px) and (max-height: 668px) {
+        font-size: .6rem;
+      }
+      @media screen and (max-width: 281px) {
+        font-size: .4rem;
       }
     }
     .active_form-textarea {
@@ -188,11 +218,21 @@
       justify-content: space-between;
       .data_active-textarea {
         height: 2rem;
-        width: 60%;
+        width: 6.5rem;
         resize: none;
         border-radius: 5px;
         border: 1px solid black;
+        @media screen and (max-height: 570px) {
+        font-size: .65rem;
+        }
+        @media screen and (min-height: 639px) and (max-height: 668px) {
+          font-size: .7rem;
+        }
+        @media screen and (max-width: 281px) {
+          font-size: .45rem;
+        }
       }
+      
     }
     .active_form-checkbox {
       margin-top: 0.8rem;
@@ -204,8 +244,16 @@
         height: 0.9rem;
         width: 0.9rem;
         @media screen and (max-height: 568px) {
-          height: .5rem;
-          width: .5rem;
+          height: .6rem;
+          width: .6rem;
+        }
+        @media screen and (min-height: 639px) and (max-height: 668px) {
+          height: .7rem;
+          width: .7rem;
+        }
+        @media screen and (max-width: 281px) {
+          height: .55rem;
+          width: .55rem;
         }
       }
     }
@@ -226,6 +274,16 @@
           width: 5rem;
           height: 1rem;
           margin-top: .3rem;
+        }
+        @media screen and (min-height: 639px) and (max-height: 668px) {
+          width: 6rem;
+          height: 1.2rem;
+          margin-top: .5rem;
+        }
+        @media screen and (max-width: 281px) {
+          width: 5rem;
+          height: 1rem;
+          margin-top: .5rem;
         }
         &:hover {
           background-color: #ef281a;
