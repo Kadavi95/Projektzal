@@ -1,11 +1,12 @@
+@import "./variables";
 .footer {
     width: 100%;
     height: 10vh; 
     position: fixed;
     bottom: 0;
     left: 0;
-    color: #ffffff;
-    background-color: #4f4f4f;
+    color: $navbtn;
+    background-color: $stronggrey;
     z-index: 3;
 }
 
@@ -25,6 +26,7 @@
 .footer_text {
     font-size: 2.1rem;
     text-align: center;
+    cursor: pointer;
 }
 .footer_container_ico{
     font-size: 2.1rem;
@@ -41,13 +43,13 @@
     transition: all .35s ease-in;
 }
 .fa-facebook:hover {
-    color: #22a2dd;
+    color: $lightblue;
 }
 .fa-instagram-square:hover {
-    color: #22a2dd;
+    color: $lightblue;
 }
 .fa-twitter:hover {
-    color: #22a2dd;
+    color: $lightblue;
 }
 @media screen and (max-width: 960px) {
     .fa-dog {
