@@ -5,7 +5,6 @@ import { firestore } from "./firebase";
 export default function CMS() {
   const [appointments, setAppointments] = useState([]);
   const [messeges, setMesseges] = useState([]);
-
   useEffect(() => {
     firestore
       .collection("appointments")
@@ -19,10 +18,8 @@ export default function CMS() {
           };
           arr.push(obj);
         });
-
         setAppointments(arr);
       });
-
     firestore
       .collection("messages")
       .get()
@@ -52,6 +49,7 @@ export default function CMS() {
               <span>{el.doctor}</span>
               <span>{el.day}</span>
               <span>{el.hour}</span>
+        
             </li>
           ))}
         </ul>
@@ -61,7 +59,7 @@ export default function CMS() {
         {messeges.map((el, i) => (
           <li key={`message_${i}`}>
             <span>{el.email}</span>
-            <span>{el.textarea}</span>
+            <textarea className='mess'>{el.textarea}</textarea>
           </li>
         ))}
       </div>
