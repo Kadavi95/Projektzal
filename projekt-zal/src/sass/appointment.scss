@@ -1,3 +1,4 @@
+@import "./variables";
 .container {
     display: flex;
     flex-direction: column;
@@ -8,7 +9,7 @@
     margin-top:5vh;;
     border: 2px solid black;
     border-radius: 20px;
-    background-image: linear-gradient(to bottom, #000000, #252026, #393e4d, #416270, #508787);
+    background-image: $bGroundImage;
     
     .formTitle {
         font-size: 1.4rem;
@@ -41,7 +42,7 @@
         border: 1px solid black;
         border-radius: 5px;
         color: white;
-        background-color: #696969;
+        background-color:$bGroundColor;
         font-size: 1rem;
         @media screen and (max-height: 667px) {
             font-size: .45rem;

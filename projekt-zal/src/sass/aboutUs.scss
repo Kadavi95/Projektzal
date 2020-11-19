@@ -1,3 +1,4 @@
+@import "./variables";
 .aboutus_container{
     margin: 0 auto;
     width: 95%;
@@ -62,7 +63,7 @@
             height: 60%;
             border: 1px solid black;
             border-radius: 10px;
-            background-color: #696969;
+            background-color: $bGroundColor;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -117,7 +118,6 @@
             height: 5rem;
             margin-left: .5rem;
             border-radius: 50%;
-            background-color: red;
             @media screen and (max-height: 570px) {
                 width: 1.6rem;
                 height: 1.6rem;
@@ -156,7 +156,7 @@
             height: 60%;
             border: 1px solid black;
             border-radius: 10px;
-            background-color: #696969;
+            background-color:$bGroundColor;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -293,7 +293,7 @@
             height: 60%;
             border: 1px solid black;
             border-radius: 10px;
-            background-color: #696969;
+            background-color:$bGroundColor;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
@@ -386,7 +386,7 @@
             height: 60%;
             border: 1px solid black;
             border-radius: 10px;
-            background-color: #696969;
+            background-color:$bGroundColor;
             display: flex;
             flex-direction: row;
             justify-content: space-around;
