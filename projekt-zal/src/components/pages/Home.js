@@ -1,22 +1,22 @@
 import React, { Component } from 'react';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import './Home.scss'
+
 
 const photos = [  
   {
     name: 'Photo 1',
-    url: "https://www.tabletowo.pl/wp-content/uploads/2019/04/model-s-001.jpg"
+    src: "https://magwet.pl/publish/system/article_images/images/000/000/072/large/Fotolia_195047487_Subscription_Monthly_M-min.jpg?1520864941"
   },
   {
     name: 'Photo 2',
-    url: "https://img.wprost.pl/img/tesla-cybertruck/52/6a/547fb87fae7558d4557dedd2b445.jpeg"
+    src: "https://www.publicdomainpictures.net/pictures/160000/velka/maine-coon-cat.jpg"
   },
   {
-    name: 'Photo 3',
-    url: "https://a.allegroimg.com/s512/037b8d/f72d552a41e1a010e913c85ba4ea/TESLA-MODEL-S-5YJS-P85D-AWD-772-KM"
+    name: 'Photo3',
+    src: "https://i1.wp.com/readysetpuppy.com/wp-content/uploads/2019/09/The-Dos-and-Donts-of-Exercising-a-Young-German-Shepherd.jpg?fit=994%2C538&ssl=1&resize=1280%2C720"
   },
 ]
 class Home extends Component {
@@ -39,7 +39,7 @@ class Home extends Component {
           {photos.map((photo) => {
             return (
               <div>
-                <img width="100%" src={photo.url }style={{width: "100vw", height:"40vh"}}></img>
+                <img width="100%" src={photo.src}style={{width: "100vw", height:"40vh"}}></img>
               </div>
             )
           })}
@@ -47,8 +47,6 @@ class Home extends Component {
         <div className='logo_home'>
         <i className="fas fa-dog pitbull"> </i>
         </div>
-        
-
         <a href="/appointment" className='test2'>Umów wizytę!</a>
      
       </div>
@@ -56,5 +54,4 @@ class Home extends Component {
     )
   }
 }
-
 export default Home

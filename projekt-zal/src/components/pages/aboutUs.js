@@ -1,5 +1,9 @@
 import React from 'react';
-import './aboutUs.scss'
+import './aboutUs.scss';
+import Pruszka from './images/pic_1.jpg';
+import Luka from './images/pic_2.jpg';
+import Random from './images/pic_3.png';
+import Pyziol from './images/pic_4.jpg';
 export default function aboutUs() {
   return (
     <>
@@ -9,9 +13,7 @@ export default function aboutUs() {
 
           <div className='doctor_container-first'>
 
-              <div className='first_doctor-photo'>
-                  
-              </div>
+              <img src={Pruszka} alt='luka' className='first_doctor-photo'></img>
 
               <div className='text_container-first'>
                   <h1 className='name_surname'>Lek. wet. Janusz</h1>
@@ -20,9 +22,9 @@ export default function aboutUs() {
 
           </div>
           <div className='doctor_container-second'>
-              <div className='second_doctor-photo'>
-    
-              </div>
+              
+              <img src={Luka} alt='luka' className='second_doctor-photo'></img>
+              
 
               <div className='text_container-second'>
                   <h1 className='name_surname'>Lek. wet. Predator</h1>
@@ -36,9 +38,8 @@ export default function aboutUs() {
 
           <div className='doctor_container-third'>
 
-              <div className='third_doctor-photo'>
-                 
-              </div>
+          <img src={Random} alt='Random' className='third_doctor-photo'></img>
+          
 
               <div className='text_container-third'>
                   <h1 className='name_surname'>Lek. wet. Nowak</h1>
@@ -47,9 +48,8 @@ export default function aboutUs() {
 
           </div>
           <div className='doctor_container-fourth'>
-              <div className='fourth_doctor-photo'>
-                 
-              </div>
+          
+          <img src={Pyziol} alt='Pyziol' className='fourth_doctor-photo'></img>
 
               <div className='text_container-fourth'>
                   <h1 className='name_surname'>Lek. wet Kowalski</h1>
