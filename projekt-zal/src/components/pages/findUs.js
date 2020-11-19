@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import {Map, Marker, GoogleApiWrapper} from 'google-maps-react';
-import './findUs.scss'
 
 const mapStyles = {
   width: '80%',

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./cms.scss";
+import '../../sass/cms.scss'
 import { firestore } from "./firebase";
 
 export default function CMS() {

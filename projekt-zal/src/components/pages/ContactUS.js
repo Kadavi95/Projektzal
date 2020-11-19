@@ -1,5 +1,5 @@
 import React from 'react';
-import './contact.scss'
+import '../../sass/contact.scss'
 import {useForm} from 'react-hook-form'
 import { firestore } from "./firebase";
 

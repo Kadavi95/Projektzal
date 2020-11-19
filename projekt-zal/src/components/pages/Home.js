@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
-import './Home.scss'
+import '../../sass/Home.scss'
 
 
 const photos = [  
@@ -39,7 +39,7 @@ class Home extends Component {
           {photos.map((photo) => {
             return (
               <div>
-                <img width="100%" src={photo.src}style={{width: "100vw", height:"40vh"}}></img>
+                <img width="100%" src={photo.src} alt=''style={{width: "100vw", height:"40vh"}}></img>
               </div>
             )
           })}

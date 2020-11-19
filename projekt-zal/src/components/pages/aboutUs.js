@@ -1,5 +1,5 @@
 import React from 'react';
-import './aboutUs.scss';
+import '../../sass/aboutUs.scss'
 import Pruszka from './images/pic_1.jpg';
 import Luka from './images/pic_2.jpg';
 import Random from './images/pic_3.png';

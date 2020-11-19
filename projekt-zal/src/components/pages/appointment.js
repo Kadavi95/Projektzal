@@ -1,5 +1,5 @@
 import React from "react";
-import "./appointment.scss";
+import './../../sass/appointment.scss'
 import { useForm } from "react-hook-form";
 import { firestore } from "./firebase";
 
