@@ -3,14 +3,29 @@
     padding: 3rem 0;
     margin: 0 auto;
     color: white;
-    background-color: red;
     height: 60vh;
+    background-color: red;
     margin-top: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     @media screen and (min-width: 539px) and (max-width: 541px){
         margin-top: 3vh; 
+    }
+    @media screen and (min-width: 410px) and (max-width: 415px){
+        margin-top: 3vh;
+    }
+    @media screen and (min-width: 370px) and (max-width: 380px){
+        margin-top: 3vh;
+    }
+    @media screen and (min-width: 359px) and (max-width: 361px){
+        margin-top: 2.5vh;
+    }
+    @media screen and (min-width: 319px) and (max-width: 321px){
+        margin-top: 1.5vh;
+    }
+    @media screen and (min-width: 279px) and (max-width: 281px){
+        margin-top: 2.5vh;
     }
 }
 .cms-title-section{
@@ -20,6 +35,25 @@
     @media screen and (min-width: 539px) and (max-width: 541px){
        font-size: 1.35rem; 
     }
+    @media screen and (min-width: 410px) and (max-width: 415px){
+        font-size: 1.15rem;
+    }
+    @media screen and (min-width: 410px) and (max-width: 415px){
+        font-size: 1.05rem;
+    }
+    @media screen and (min-width: 370px) and (max-width: 380px){
+        font-size: 1rem;
+    }
+    @media screen and (min-width: 359px) and (max-width: 361px){
+        font-size: .95rem;
+    }
+    @media screen and (min-width: 319px) and (max-width: 321px){
+        font-size: .85rem;
+    }
+    @media screen and (min-width: 279px) and (max-width: 281px){
+        font-size: .8rem;
+    }
+    
 }
 .cms-lists{
     display: flex;
@@ -38,6 +72,26 @@
         width: 25rem;
         height: 8rem;
     }
+    @media screen and (min-width: 410px) and (max-width: 415px){
+        width: 20rem;
+        height: 7rem;
+    }
+    @media screen and (min-width: 370px) and (max-width: 380px){
+        width: 18rem;
+        height: 6rem;
+    }
+    @media screen and (min-width: 359px) and (max-width: 361px){
+        width: 17rem;
+        height: 5rem;
+    }
+    @media screen and (min-width: 319px) and (max-width: 321px){
+        width: 15rem;
+        height: 4rem;
+    }
+    @media screen and (min-width: 279px) and (max-width: 281px){
+        width: 13rem;
+        height: 6rem;
+    }
     li{
         margin: .5rem 0;
         border: 1px solid black;
@@ -55,9 +109,24 @@
             font-size: .7rem;
             text-align: center;
             overflow: scroll;
-            margin-top: .1rem;
+            
             @media screen and (min-width: 539px) and (max-width: 541px){
                 font-size: .6rem;
+            }
+            @media screen and (min-width: 410px) and (max-width: 415px){
+                font-size: .5rem;
+            }
+            @media screen and (min-width: 370px) and (max-width: 380px){
+                font-size: .45rem;
+            }
+            @media screen and (min-width: 359px) and (max-width: 361px){
+                font-size: .4rem;
+            }
+            @media screen and (min-width: 319px) and (max-width: 321px){
+                font-size: .35rem;
+            }
+            @media screen and (min-width: 279px) and (max-width: 281px){
+                font-size: .3rem;
             }
         }
         .mess{
@@ -67,11 +136,28 @@
             background-color: #22a2dd; 
             resize: none;
             color: white;
-           
             border: 1px solid black;
             font-size: .7rem;
             text-align: center;
             overflow: scroll;
+            @media screen and (min-width: 539px) and (max-width: 541px){
+                font-size: .6rem;
+            }
+            @media screen and (min-width: 410px) and (max-width: 415px){
+                font-size: .5rem;
+            }
+            @media screen and (min-width: 370px) and (max-width: 380px){
+                font-size: .45rem;
+            }
+            @media screen and (min-width: 359px) and (max-width: 361px){
+                font-size: .4rem;
+            }
+            @media screen and (min-width: 319px) and (max-width: 321px){
+            font-size: .35rem;
+            }
+            @media screen and (min-width: 279px) and (max-width: 281px){
+                font-size: .3rem;
+            }
         }
     }
 }
